@@ -37,3 +37,14 @@ def gameon_choice():
         return True
     else:
         return False
+
+#Initialize game
+game_on = True
+game_list = [0, 1, 2]
+while game_on:
+    display_game(game_list)
+    position = position_choice()
+    game_list = replacement_choice(game_list, position)
+    display_game(game_list)
+
+    game_on = gameon_choice()
