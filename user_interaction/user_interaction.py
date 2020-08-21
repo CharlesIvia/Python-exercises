@@ -13,3 +13,12 @@ def position_choice():
         if choice not in ["0", "1", "2"]:
             print("Sorry, invalid choice")
     return int(choice)
+
+#Replacement choice
+
+
+def replacement_choice(game_list, position):
+    user_placement = input("Type a string to place at a position")
+    game_list[position] = user_placement
+
+    return game_list
