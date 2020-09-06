@@ -10,8 +10,8 @@ class Line:
         a, b = self.coor1
         x, y = self.coor2
         dquared = (x-a)**2 + (y-b)**2
-        print(dquared)
         return math.sqrt(dquared)
+        #return ((x-a)**2 + (y-b)**2)**0.5
 
     def slope(self):
         a, b = self.coor1
