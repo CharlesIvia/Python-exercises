@@ -12,3 +12,11 @@ class Line:
         dquared = (x-a)**2 + (y-b)**2
         print(dquared)
         return math.sqrt(dquared)
+
+    def slope(self):
+        a, b = self.coor1
+        x, y = self.coor2
+        numerator = y - b
+        denominator = x - a
+        print(numerator, denominator)
+        return numerator / denominator
